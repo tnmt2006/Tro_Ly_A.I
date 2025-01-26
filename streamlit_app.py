@@ -6,10 +6,20 @@ def rfile(name_file):
     content_sys = file.read()
     return content_sys
 
-# Hiển thị logo ở trên cùng, căn giữa
-col1, col2, col3 = st.columns([3, 2, 3])
-with col2:
-    st.image("logo.png", use_container_width=True)  # Thay use_column_width bằng use_container_width
+# # Hiển thị logo ở trên cùng, căn giữa
+# col1, col2, col3 = st.columns([3, 2, 3])
+# with col2:
+#     st.image("logo.png", use_container_width=True)  # Thay use_column_width bằng use_container_width
+
+
+try:
+    # Hiển thị logo ở trên cùng, căn giữa
+    col1, col2, col3 = st.columns([3, 2, 3])
+    with col2:
+        st.image("logo.png", use_container_width=True)  # Thay use_column_width bằng use_container_width
+except:
+    pass
+
 
 # Tùy chỉnh nội dung tiêu đề
 title_content = rfile("00.xinchao.txt")
