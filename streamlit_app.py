@@ -94,5 +94,7 @@ if prompt := st.chat_input("Bạn nhập nội dung cần trao đổi ở đây 
         response = st.write_stream(stream)
     st.session_state.messages.append({"role": "assistant", "content": response})
 
+    # Xin chào, tôi chỉ đang test thôi
+
 
 #####
